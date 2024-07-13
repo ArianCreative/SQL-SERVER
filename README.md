@@ -29,7 +29,8 @@ El modelo consta 4 tablas, cada una con sus respectivas columnas.
   
 * B. Si se ganó el trato, ¿cúal es la diferencia entre el precio de cierre del producto y el precio de venta original?
 
-* C. ¿Quiénes son los diez agentes de ventas que obtuvieron una mayor diferencia entre el precio de cierre y el precio de venta original del producto?
+* C. ¿Quiénes son los diez agentes de ventas que obtuvieron una mayor diferencia entre el precio de cierre y
+  el precio de venta original del producto?
 
 * D. Mostrar al gerente, su equipo y la cantidad de ventas que concretaron
 
