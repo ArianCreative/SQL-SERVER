@@ -8,10 +8,10 @@ empresa mes tras mes. Así como también, se requiere conocer las la cantidad de
 al que los empleados concretan la venta, y contrastarlo con el precio original de venta del producto.
 
 ## Pasos para realizar el proyecto 👇
-  1. Descargar los archivos csv del repositorio Maven analytics donde se encuentra el dataset. 
-  2. Construir la base de datos en SQL e insertar los datos de los archivos descargados.
-  3. Análisis y Consultas
-  4. Visualización de las consultas en Power BI
+*  ✔Descargar los archivos csv del repositorio Maven analytics donde se encuentra el dataset. 
+*  ✔Construir la base de datos en SQL e insertar los datos de los archivos descargados.
+*  ✔Análisis y Consultas
+*  ✔Visualización de las consultas en Power BI
 
 ## DESCRIPCIÒN DEL MODELO 📄
 El modelo consta 4 tablas, cada una con sus respectivas columnas.
@@ -27,13 +27,13 @@ entender el dinamismo y funcionamiento del negocio.
     
 ## CONSULTAS 📊
 
-* A. Mostrar el monto de ventas por mes
+*  A. Mostrar el monto de ventas por mes
   
-* B. Si se ganó el trato, ¿cúal es la diferencia entre el precio de cierre del producto y el precio de venta original?
+*  B. Si se ganó el trato, ¿cúal es la diferencia entre el precio de cierre del producto y el precio de venta original?
 
-* C. Mostrar a los diez agentes de ventas que obtuvieron una mayor diferencia entre el precio de cierre y el precio de venta original del producto?
+*  C. Mostrar a los diez agentes de ventas que obtuvieron una mayor diferencia entre el precio de cierre y el precio de venta original del producto?
 
-* D. Mostrar al gerente, su equipo y la cantidad de ventas que concretaron
+*  D. Mostrar al gerente, su equipo y la cantidad de ventas que concretaron
 
 
 
