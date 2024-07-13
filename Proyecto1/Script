@@ -1,1 +1,163 @@
-Script:
+1. SCRIPT para la creación de la base de datos
+
+-- CREAR LA BASE DE DATOS
+create database CRM_SALES
+go
+
+-- CREAR LAS TABLAS
+Use CRM_SALES
+go
+
+create table Accounts (
+	account nvarchar(100) not null,
+	sector nvarchar(100) not null,
+	year_established date not null,
+	revenue numeric (10,3) not null,
+	employees int not null,
+	office_location nvarchar(100) not null,
+	subsidary_of nvarchar (100)
+	)
+
+create table Products(
+	product nvarchar(100) not null,
+	series nvarchar (20) not null,
+	sales_price int not null
+	)
+
+create table Sales_teams(
+	sales_agent nvarchar(100) not null,
+	manager nvarchar(100) not null,
+	regional_office nvarchar(50) not null
+	)
+
+create table Sales_pipeline(
+	opportunity_id nchar(8) not null,
+	sales_agent nvarchar(100) not null,
+	product nvarchar(100) not null,
+	account nvarchar(100) ,
+	deal_stage nvarchar(20) not null,
+	engage_date date,
+	close_date date,
+	close_value int
+	)
+
+
+
+
+-- LLAVES PRIMARIAS
+
+Alter table Accounts 
+add constraint PK_enlace_accounts primary key (account)
+
+Alter table Products
+add constraint PK_enlace_products primary key (product)
+
+Alter table Sales_teams
+add constraint PK_enlace_sales_teams primary key(sales_agent)
+
+Alter table Sales_pipeline
+add constraint PK_enlace_sales_pipeline primary key (opportunity_id)
+
+-- LLAVES FORANEAS
+
+Alter table Sales_pipeline
+add constraint FK_enlace_sales_teams foreign key (sales_agent) references Sales_teams (sales_agent)
+
+Alter table Sales_pipeline 
+add constraint FK_enlace_products foreign key(product) references Products(product)
+
+Alter table Sales_pipeline
+add constraint FK_enlace_accounts foreign key(account) references Accounts(account)
+
+
+
+
+2. INSERTAR DATOS
+
+Bulk insert Accounts 
+from 'C:\Users\ELVIS\Downloads\CRM SALES OPPORTUNITIES\accounts.csv'
+with (
+	Fieldterminator= ',',
+	Rowterminator = '\n',
+	firstrow= 2
+	)
+
+Bulk insert Products 
+from 'C:\Users\ELVIS\Downloads\CRM SALES OPPORTUNITIES\products.csv'
+with (
+	Fieldterminator= ',',
+	Rowterminator = '\n',
+	firstrow= 2
+	)
+
+Bulk insert Sales_teams 
+from 'C:\Users\ELVIS\Downloads\CRM SALES OPPORTUNITIES\sales_teams.csv'
+with (
+	Fieldterminator= ',',
+	Rowterminator = '\n',
+	firstrow= 2
+	)
+
+Bulk insert Sales_pipeline 
+from 'C:\Users\ELVIS\Downloads\CRM SALES OPPORTUNITIES\sales_pipeline.csv'
+with (
+	Fieldterminator= ',',
+	Rowterminator = '\n',
+	firstrow= 2
+	)
+
+3. ANALISIS Y CONSULTAS 
+a) Mostrar el monto de ventas por mes
+
+select 
+	year(close_date) as anio,
+	month(close_date) num_mes,
+	datename(month,close_date) as nombre_mes,
+	sum(close_value) as monto_cierre
+from Sales_pipeline
+where close_date is not null or close_value is not null
+group by year(close_date), datename(month,close_date), MONTH(close_date)
+
+b) Si se ganó el trato, ¿cúal es la diferencia entre el precio de cierre del producto y el precio de venta original?
+
+select 
+	opportunity_id as id_oportunidad,
+	sales_agent as agente_de_ventas,
+	sales_pipeline.product as producto,
+	account as empresa, deal_stage as etapa_del_trato,
+	close_value as precio_cierre,
+	p.sales_price as precio_venta,
+	close_value- p.sales_price as dif_entre_preciocierre_y_precioventa
+from Sales_pipeline 
+inner join Products p on  Sales_pipeline.product= P.product
+where deal_stage='Won'
+
+
+c) ¿Quiénes son los diez agentes de ventas que obtuvieron una mayor diferencia entre el precio de cierre y el precio de venta original?
+
+select 
+	top 10 opportunity_id as id_oportunidad,
+	sales_agent as agente_de_ventas,
+	sales_pipeline.product as producto,
+	close_value as precio_cierre,
+	p.sales_price as precio_venta,
+	close_value- p.sales_price as dif_entre_preciocierre_y_precioventa
+from Sales_pipeline 
+inner join Products p on  Sales_pipeline.product= P.product
+where deal_stage='Won'
+
+d) Mostrar al gerente, su equipo y la cantidad de ventas que concretaron
+
+select 
+	st.manager,
+	sp.sales_agent,
+	count(sp.deal_stage) as cant_ventas
+from Sales_pipeline sp
+inner join Sales_teams st on sp.sales_agent= st.sales_agent
+where sp.deal_stage= 'Won'
+group by st.manager, sp.sales_agent
+
+
+
+
+
