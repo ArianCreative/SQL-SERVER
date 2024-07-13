@@ -3,24 +3,25 @@
 
 
 ## JUSTIFICACIÓN DEL MODELO
-El presente proyecto se enfocará en el análisis de las entregas de la empresa PEAR S.A, que nos permitirá entender cuál 
-es la tendencia de ciertas entregas, de esta forma ver cuales son los lugares con mayores entregas, para encontrar una estrategia donde 
-centrar el negocio. Asimismo, en la utilización de esta base de datos podemos analizar cuál es el rendimiento de las entregas , medido en 
-cuanto a las entregas efectuadas, además de evaluar en los costos incurridos por entrega y las utilidades generadas por empleado y destino 
-de reparto.
+El presente proyecto hará énfasis en el análisis de las ventas de una empresa que vende hardware informático. Se busca conocer el ingreso que recibe la 
+empresa mes tras mes. Así como también, se requiere conocer las la cantidad de ventas que generan los equipos de ventas. Y determinar cúal es el precio de cierre 
+al que los empleados concretan la venta, y contrastarlo con el precio original de venta del producto.
+
+## Pasos para realizar el proyecto 📝
+  1. Descargar los archivos csv del repositorio Maven analytics donde se encuentra el dataset. 
+  2. Construir la base de datos en SQL e insertar los datos de los archivos descargados.
+  3. Análisis y Consultas
+  4. Visualización de las consultas en Power BI
 
 ## DESCRIPCIÒN DEL MODELO 📝
-El modelo seleccionado es una base de datos que nos muestra con detalle como es el movimiento de las entregas de la empresa 
-“PEAR SA” dedicada al transporte y distribución de carga y paquetería. Se muestran además los costos e ingresos por las entregas, así como
-la información sobre las unidades que realizan las entregas, entre otros datos importantes que nos permitirán entender cómo es el funcionamiento de esta organización. El modelo consta 7 tablas, cada una con sus respectivas columnas.
 
-  * 🚍Conductores.
-  * 🚍Costos.
-  * 🚍Ingresos.
-  * 🚍Entregas.
-  * 🚍Hoja_Distribución.
-  * 🚍Km_recorridos.
-  * 🚍Unidades.
+El modelo consta 4 tablas, cada una con sus respectivas columnas.
+
+  * ✔Accounts.
+  * ✔Products.
+  * ✔Sales_teams.
+  * ✔Sales_pipeline.
+
     
 ## PREGUNTAS DE NEGOCIO ✅
 
