@@ -17,10 +17,10 @@ al que los empleados concretan la venta, y contrastarlo con el precio original d
 
 El modelo consta 4 tablas, cada una con sus respectivas columnas.
 
-   ✔Accounts.
-   ✔Products.
-   ✔Sales_teams.
-   ✔Sales_pipeline.
+ *  ✔Accounts.
+ *  ✔Products.
+ *  ✔Sales_teams.
+ *  ✔Sales_pipeline.
 
     
 ## CONSULTAS
