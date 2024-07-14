@@ -1,4 +1,5 @@
 ## VISUALIZACIONES DE LAS CONSULTAS
+Si deseas ver el reporte publicado, dale click 👇
 [![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiNWQxZDc0Y2QtZGY1OC00MzA0LWI2ZmItZjlmYjlhYzc5NGU5IiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9&pageName=567b08f38942d4c1842b)
 
 ## CONSULTA 1. 
