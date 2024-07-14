@@ -133,7 +133,7 @@ inner join Products p on  Sales_pipeline.product= P.product
 where deal_stage='Won'
 
 
-c) ¿Quiénes son los diez agentes de ventas que obtuvieron una mayor diferencia entre el precio de cierre y el precio de venta original?
+c) ¿Quiénes son los agentes cuya diferencia entre el precio de cierre y venta se encuentran entre los diez mejores? 
 
 select 
 	top 10 opportunity_id as id_oportunidad,
