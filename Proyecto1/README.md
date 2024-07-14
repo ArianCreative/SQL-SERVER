@@ -31,6 +31,6 @@ entender el dinamismo y funcionamiento del negocio.
   
 *  B. Si se ganó el trato, ¿cúal es la diferencia entre el precio de cierre del producto y el precio de venta original?
 
-*  C. Mostrar a los diez agentes de ventas que obtuvieron una mayor diferencia entre el precio de cierre y el precio de venta original del producto?
+*  C. ¿Quiénes son los agentes cuya diferencia entre el precio de cierre y venta se encuentran entre los diez mejores? 
 
 *  D. Mostrar al gerente, su equipo y la cantidad de ventas que concretaron
