@@ -1,4 +1,5 @@
 ## VISUALIZACIONES DE LAS CONSULTAS
+[![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/groups/me/reports/8c1d2b8b-a192-4b32-9a58-39cc31b51520/ReportSectioncce74b0bbbe2eb9a2acb?experience=power-bi)
 
 ## CONSULTA 1. 
 - Mostrar el monto de ventas por mes
