@@ -3,7 +3,7 @@
 👇 Para ver el reporte publicado, presionar en el icono
 
 
-[![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiNWQxZDc0Y2QtZGY1OC00MzA0LWI2ZmItZjlmYjlhYzc5NGU5IiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9&pageName=567b08f38942d4c1842b)
+[![Power Bi](https://app.powerbi.com/view?r=eyJrIjoiMTdhMTkyODctNzY5Mi00NzBjLTg4YTktMTA1NWY4MTAxMDFiIiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9)
 
 
 ## CONSULTA 1. 
