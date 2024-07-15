@@ -11,7 +11,7 @@ al que los empleados concretan la venta, y contrastarlo con el precio original d
 *  ✔Descargar los archivos csv del repositorio Maven analytics donde se encuentra el dataset. 
 *  ✔Construir la base de datos en SQL e insertar los datos de los archivos descargados.
 *  ✔Análisis y Consultas
-*  ✔Visualización de las consultas en Power BI
+*  ✔Exportar las consultas a Power BI y realizar visualizaciones
 
 ## DESCRIPCIÒN DEL MODELO 📄
 El modelo consta 4 tablas, cada una con sus respectivas columnas.
