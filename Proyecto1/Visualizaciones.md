@@ -5,7 +5,6 @@
 
 [![Power Bi](https://app.powerbi.com/view?r=eyJrIjoiMTdhMTkyODctNzY5Mi00NzBjLTg4YTktMTA1NWY4MTAxMDFiIiwidCI6ImM0YTY2YzM0LTJiYjctNDUxZi04YmUxLWIyYzI2YTQzMDE1OCIsImMiOjR9)
 
-
 ## CONSULTA 1. 
 - Mostrar el monto de ventas por mes
  <img src="https://imgur.com/QCOooF9.png"> 
