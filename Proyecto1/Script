@@ -75,7 +75,7 @@ add constraint FK_enlace_accounts foreign key(account) references Accounts(accou
 2. INSERTAR DATOS
 
 Bulk insert Accounts 
-from 'C:\Users\ELVIS\Downloads\CRM SALES OPPORTUNITIES\accounts.csv'
+from 'C:\Users\BRAJHAN\Downloads\CRM SALES OPPORTUNITIES\accounts.csv'
 with (
 	Fieldterminator= ',',
 	Rowterminator = '\n',
@@ -83,7 +83,7 @@ with (
 	)
 
 Bulk insert Products 
-from 'C:\Users\ELVIS\Downloads\CRM SALES OPPORTUNITIES\products.csv'
+from 'C:\Users\BRAJHAN\Downloads\CRM SALES OPPORTUNITIES\products.csv'
 with (
 	Fieldterminator= ',',
 	Rowterminator = '\n',
@@ -91,7 +91,7 @@ with (
 	)
 
 Bulk insert Sales_teams 
-from 'C:\Users\ELVIS\Downloads\CRM SALES OPPORTUNITIES\sales_teams.csv'
+from 'C:\Users\BRAJHAN\Downloads\CRM SALES OPPORTUNITIES\sales_teams.csv'
 with (
 	Fieldterminator= ',',
 	Rowterminator = '\n',
@@ -99,7 +99,7 @@ with (
 	)
 
 Bulk insert Sales_pipeline 
-from 'C:\Users\ELVIS\Downloads\CRM SALES OPPORTUNITIES\sales_pipeline.csv'
+from 'C:\Users\BRAJHAN\Downloads\CRM SALES OPPORTUNITIES\sales_pipeline.csv'
 with (
 	Fieldterminator= ',',
 	Rowterminator = '\n',
